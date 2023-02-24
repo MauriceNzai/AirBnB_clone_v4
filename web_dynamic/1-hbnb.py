@@ -28,6 +28,6 @@ def hbnb_filters(the_id=None):
     return render_template('1-hbnb.html', states=states, amenities=amenities,
                            places=places, users=users, cache_id=cache_id)
 
-    if __name__ == "__main__":
-        """ Main Function """
-        app.run(host='0.0.0.0', port=5000)
+if __name__ == "__main__":
+    """ Main Function """
+    app.run(host='0.0.0.0', port=5000)
