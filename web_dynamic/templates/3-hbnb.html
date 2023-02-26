@@ -75,7 +75,7 @@
 	    <h3>Amenities</h3>
 	    <h4>&nbsp;</h4>
 	    <ul class="popover">
-	      {% for amenity in amens|sort(attribute='name') %}
+	      {% for amenity in amenities|sort(attribute='name') %}
 	      <LI><INPUT type="checkbox" data-id="{{ amenity.id }}"
 			 data-name="{{ amenity.name }}">{{ amenity.name }}</LI>
 	      {% endfor %}
@@ -145,7 +145,7 @@
     <!-- FOOTER -->
 
     <footer>
-      Holberton School
+      Best School
     </footer>
   </body>
 </html>

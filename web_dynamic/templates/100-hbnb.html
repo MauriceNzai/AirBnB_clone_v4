@@ -6,7 +6,7 @@
 
     <META charset="utf-8">
     <META name="viewport" content="width=device-width">
-    <TITLE>HBnB Clone</TITLE>
+    <TITLE>AirBnB Clone</TITLE>
 
     <!-- FAVICON -->
 
@@ -86,7 +86,7 @@
 	          <H3>Amenities</H3>
 	          <H4>&nbsp;</H4>
 	          <UL class="popover">
-	          {% for amenity in amens|sort(attribute='name') %}
+	          {% for amenity in amenities|sort(attribute='name') %}
 	            <LI>
                 <INPUT type="checkbox" data-id="{{ amenity.id }}" data-name="{{ amenity.name }}">
                   {{ amenity.name }}
@@ -112,7 +112,7 @@
     <!-- FOOTER -->
 
     <FOOTER>
-      Holberton School
+      Best School
     </FOOTER>
   </BODY>
 </HTML>
